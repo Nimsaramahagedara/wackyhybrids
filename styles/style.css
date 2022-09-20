@@ -1,0 +1,96 @@
+@font-face {
+    font-family: PixelSplitter;
+    src: url(../fonts/pixelsplitter.woff);
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: PixelSplitter;
+}
+:root{
+    --primary: #6EC1E4;
+}
+
+.header{
+    width: 100%;
+    height: 170px;
+    background-color: var(--primary);
+}
+.box-container{
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateX(-2%);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    left: 0;
+    font-size: 32px;
+    color: white;
+}
+.logo i:hover{
+    color: black;
+    cursor: pointer;
+}
+.logo img{
+    width: 100%;
+}
+.header-text{
+   padding: 10px 20px;
+   transition: 0.3s;
+}
+.header-text:hover{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .box-container{
+        transform: translateX(0);
+    }
+    .box1{
+        display: block;
+        position: absolute;
+        top:170px;
+        width: 100%;
+        background-color: black;
+    }
+    .box2{
+        display: block;
+        position: absolute;
+        top:290px;
+        width: 100%;
+        background-color: black;
+    }
+    .box1 a, .box2 a{
+        display: block;
+    }
+    .header-text:hover{
+        color: white;
+        background-color: var(--primary);
+    }
+    .logo{
+        padding: 50px;
+    }
+    .logo i{
+        display: block !important;
+    }
+    .logo img{
+        max-width: 100%;
+        padding-right: 30px ;
+    }
+    .menu{
+        display: none;
+    }
+}
