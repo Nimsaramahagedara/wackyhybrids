@@ -212,8 +212,18 @@ section {
     position: absolute;
     overflow: hidden;
     float: left; 
+    /*REMOVE IF NOT SUCESS*/
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+/*REMOVE IF NOT SUCESS*/
+.pic{
+    opacity: 0;
 }
 
+.active {
+    opacity: 1 !important;
+}
 @media screen and (max-width: 800px) {
     .image-2{
         display: none;
@@ -226,22 +236,31 @@ section {
 
     .collection .text , .collection .image{
         width: 100%;
+        height: unset;
     }
     .collection{
         display: block;
     }
 }
 
-/*KEY FRAMES FOR CHANGE THE IMAGES*/
+/*KEY FRAMES FOR CHANGE THE IMAGES
 
 @keyframes fadefor{
     0% {opacity: 1;}
     15% {opacity: 1;}
     30% {opacity: 0;}
     45% {opacity: 0;}
+    75% {opacity: 0;}
     100% {opacity: 1;}
 }
 
 .image-4{
-    animation: fadefor 3s infinite;
+    animation: fadefor 10s infinite;
 }
+.image-3{
+    animation: fadefor 7.5s infinite;
+}
+.image-2{
+    animation: fadefor 5s infinite;
+}
+*/

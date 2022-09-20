@@ -29,3 +29,46 @@ function scrollFunction() {
     m2.style.top = "170px";
   }
 }
+
+     
+document.addEventListener('DOMContentLoaded', function() {
+     var pics = document.querySelectorAll('.pic');
+     var pics2 = document.querySelectorAll('.pic2');/*v2*/
+     /*const pics = document.querySelectorAll('.pic');*/
+     const lastPic = pics.length - 1;
+     const lastPic2 = pics2.length - 1;/*v2*/
+
+     const transitionDuration = 800; // matches CSS
+     const transitionDelay = 3000; // up to you
+     const totalDelay = transitionDuration + transitionDelay;
+     const intervalDelay = (transitionDuration * 2) + transitionDelay; // time to fade out + time to fade in + time to stay active
+
+     function toggleClass() {
+     const activePic = document.querySelector('.pic.active');
+     const activePic2 = document.querySelector('.pic2.active'); /*v2*/
+
+     const activeIndex = Array.prototype.indexOf.call(pics, activePic);
+     const activeIndex2 = Array.prototype.indexOf.call(pics2, activePic2);/*v2*/
+
+     const nextIndex = activeIndex === lastPic ? 0 : activeIndex + 1;
+     const nextIndex2 = activeIndex2 === lastPic2 ? 0 : activeIndex2 + 1;
+
+     const nextPic = pics[nextIndex];
+     const nextPic2 = pics2[nextIndex2];/*v2*/
+     
+
+     setTimeout(() => activePic.classList.remove('active'), transitionDelay);
+     setTimeout(() => activePic2.classList.remove('active'), transitionDelay);/*v2*/
+     setTimeout(() =>nextPic.classList.add('active'), totalDelay);
+     setTimeout(() =>nextPic2.classList.add('active'), totalDelay);/*v2*/
+     }
+     setInterval(toggleClass, intervalDelay);
+ });
+
+
+
+
+
+
+
+
