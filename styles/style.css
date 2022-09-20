@@ -27,7 +27,6 @@ body{
     background-color: var(--primary);
     position: sticky;
     top: 0;
-    z-index: 1;
 }
 .box-container{
     width: 100%;
@@ -70,19 +69,14 @@ a{
     .box-container{
         transform: translateX(0);
     }
-    .box1{
+    .box1,.box2{
         display: block;
         position: absolute;
         top:170px;
         width: 100%;
         background-color: black;
-    }
-    .box2{
-        display: block;
-        position: absolute;
-        top:290px;
-        width: 100%;
-        background-color: black;
+        transition: 0.3s;
+        visibility: hidden;
     }
     .box1 a, .box2 a{
         display: block;
@@ -101,8 +95,8 @@ a{
         max-width: 100%;
         padding-right: 30px ;
     }
-    .menu{
-        visibility: hidden;
+    .header-text{
+        transition: 0s;
     }
 }
 /*  Main*/
@@ -110,6 +104,7 @@ a{
     margin-top: 10px;
     position: relative;
     display: block;
+    z-index: -1;
 }
 
 /*Landing Video*/
@@ -149,9 +144,14 @@ a{
 }
 .join-discord-2{
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .join-discord-2 div{
    flex-basis: 50%;
+}
+.join-discord-2 div h2{
+    margin-bottom: 30px;
 }
 .join-discord-2 div video{
     width: 100%;
@@ -162,4 +162,20 @@ a{
     text-decoration: none;
     color: black;
     padding: 10px 20px;
+}
+
+@media screen and (max-width: 636px) {
+    .join-discord-2 div{
+        flex-basis: 100% ;
+        text-align: center;
+    }
+}
+
+
+/*COLLECTION*/
+
+.collection{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
 }
