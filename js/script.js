@@ -6,11 +6,11 @@ function menu(){
  
     if(icon.className == "fa-solid fa-bars"){
          icon.setAttribute("class","fa-solid fa-x");
-         menu[0].style.display = "block";
-         menu[1].style.display = "block";
+         menu[0].style.visibility = "visible";
+         menu[1].style.visibility = "visible";
     }else{
          icon.setAttribute("class","fa-solid fa-bars");
-         menu[0].style.display = "none";
-         menu[1].style.display = "none";
+         menu[0].style.visibility = "hidden";
+         menu[1].style.visibility = "hidden";
     }
  }

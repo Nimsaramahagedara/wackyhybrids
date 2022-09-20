@@ -12,11 +12,22 @@
 :root{
     --primary: #6EC1E4;
 }
+body{
+    background-color: black;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .header{
     width: 100%;
     height: 170px;
     background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .box-container{
     width: 100%;
@@ -91,6 +102,64 @@ a{
         padding-right: 30px ;
     }
     .menu{
-        display: none;
+        visibility: hidden;
     }
+}
+/*  Main*/
+.main{
+    margin-top: 10px;
+    position: relative;
+    display: block;
+}
+
+/*Landing Video*/
+
+.landing-video{
+    margin: 10px auto;
+    width: 55%;
+}
+.landing-video video{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+    .landing-video{
+        width: 95%;
+    }
+}
+
+/*JOIN DISCORD*/
+.join-discord{
+    width: 80%;
+    margin: 0px auto;
+}
+.join-discord .title{
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    margin: 40px;
+    padding: 50px;
+}
+.join-discord .title h1,.join-discord-2 div h2{
+    color: var(--primary);
+    font-size: 32px;
+}
+.join-discord-2{
+    display: flex;
+}
+.join-discord-2 div{
+   flex-basis: 50%;
+}
+.join-discord-2 div video{
+    width: 100%;
+}
+.btn{
+    background-color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
 }
