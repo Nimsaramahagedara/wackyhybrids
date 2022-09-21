@@ -23,7 +23,7 @@ function scrollFunction() {
      const m2 = document.getElementsByClassName("box2")[0];
   if (icon.className == "fa-solid fa-x") {
     m.style.top = "170px";
-    m2.style.top = "290px";
+    m2.style.top = "280px";
   } else {
     /*m.style.top = "150px";*/
     m2.style.top = "170px";
