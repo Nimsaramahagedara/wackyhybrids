@@ -66,6 +66,42 @@ document.addEventListener('DOMContentLoaded', function() {
  });
 
 
+ /*CLOTHING SLIDER*/
+
+ document.addEventListener('DOMContentLoaded', function() {
+     var pics = document.querySelectorAll('.clothpic');
+
+     /*const pics = document.querySelectorAll('.pic');*/
+     const lastPic = pics.length - 1;
+
+
+     const transitionDuration = 800; // matches CSS
+     const transitionDelay = 3000; // up to you
+     const totalDelay = transitionDuration + transitionDelay;
+     const intervalDelay = (transitionDuration * 2) + transitionDelay; // time to fade out + time to fade in + time to stay active
+
+     function toggleClass() {
+     const activePic = document.querySelector('.clothpic.active');
+
+     const activeIndex = Array.prototype.indexOf.call(pics, activePic);
+
+
+     const nextIndex = activeIndex === lastPic ? 0 : activeIndex + 1;
+
+
+     const nextPic = pics[nextIndex];
+
+     
+
+     setTimeout(() => activePic.classList.remove('active'), transitionDelay);
+
+     setTimeout(() =>nextPic.classList.add('active'), totalDelay);
+
+     }
+     setInterval(toggleClass, intervalDelay);
+ });
+
+
 
 
 
