@@ -202,7 +202,7 @@ section {
     height: 100%;
     display: grid;
 }
-.text h2{
+.text h2, .content h2{
     width: 100%;
     background-color: var(--primary);
     color: white;
@@ -217,7 +217,7 @@ section {
     color: var(--primary);
     font-size: 32px;
 }
-.text p{
+.text p, .content p{
     font-family: "Roboto", Sans-serif;
     margin: 20px 0px;
     color: var(--paracolor);
@@ -229,11 +229,7 @@ section {
     width: 20% !important;
 }
 .image img{
-    /*width: inherit;
-    position: absolute;*/
     overflow: hidden;
-   /* float: left; 
-    /*REMOVE IF NOT SUCESS*/
     opacity: 0;
     transition: opacity 800ms ease;
     width: 100%;
@@ -351,8 +347,9 @@ section {
     flex-wrap: wrap;
     padding: 10px;
 }
-.collection-3 div{
+.collection-3 .text{
     width: 33.33%;
+    padding: 5px;
 }
 .collection-3 div video{
     width: 90%;
@@ -363,6 +360,8 @@ section {
 }
 .collection-3 .text .clothings{
     display: grid;
+    max-height: 450px;
+    overflow: hidden;
 }
 .collection-3 .text .clothings img{
     position: relative;
@@ -377,12 +376,18 @@ section {
 
     
 }
+@media screen and (max-width: 1100px) {
+
+    .collection-3 div{
+        width: 50%;
+    }
+}
 @media screen and (max-width: 800px) {
 
     .collection-3{
         display: block;
     }
-    .collection-3 div{
+    .collection-3 .text{
         width: 100%;
         text-align: justify;
     }
@@ -392,8 +397,66 @@ section {
         border-radius: 0;
         margin-left: unset;
     }
+    .collection-3 .text .clothings{
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 80vh;
+    }
 }
 
+/*GAMING SLIDER*/
+
+.gaming-slider{
+    width: calc(30vw * 11) !important;
+    display: flex;
+    animation: game-scroll 20s linear infinite;
+}
+
+@keyframes game-scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-30vw * 6));
+    }
+    
+}
+
+@media screen and (max-width: 645px) {
+
+    .gaming-slider{
+        width: calc(30vw * 18) !important;
+
+    }
+}
+
+/*COLLECTION 4*/
+
+.collection-3 .content{
+    width: 50%;
+    padding: 5px;
+    
+}
+.collection-3 .content .img-container{
+    display: flex;
+    width: 100%;
+}
+.collection-3 .content .img-container img{
+    width: 50%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    
+.collection-3 .content{
+    width: 100%;
+    
+}
+
+}
 /*KEY FRAMES FOR CHANGE THE IMAGES
 
 .image{
