@@ -344,6 +344,17 @@ section {
     text-align: center;
     font-size: 35px;
 }
+.collection-3-heading h2{
+    margin: 20px auto;
+    color: white;
+    background-color: var(--primary);
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+}
+.collection-3-heading h2:hover{
+    background-color: transparent;
+}
 .collection-3{
     display: flex;
     flex-wrap: wrap;
