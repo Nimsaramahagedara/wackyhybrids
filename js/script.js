@@ -101,6 +101,22 @@ document.addEventListener('DOMContentLoaded', function() {
      setInterval(toggleClass, intervalDelay);
  });
 
+ /*SHOW FAQ CLOSED TEXT*/
+
+ function showCloseText(id,iconId){
+     var icon = document.getElementById(iconId);
+     var box = document.getElementById(id);
+
+     if(icon.className == "fa-solid fa-plus" ){
+          icon.setAttribute('class',"fa-solid fa-minus");
+          icon.style.color = "#6EC1E4";
+          box.style.display = "block";
+     }else{
+          icon.setAttribute('class',"fa-solid fa-plus");
+          box.style.display = "none";
+     }
+
+}
 
 
 
