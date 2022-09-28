@@ -30,9 +30,8 @@ function scrollFunction() {
   }
 }
 
-     
-document.addEventListener('DOMContentLoaded', function() {
-     var pics = document.querySelectorAll('.pic');
+  {
+     let pics = document.querySelectorAll('.pic');
      var pics2 = document.querySelectorAll('.pic2');/*v2*/
      /*const pics = document.querySelectorAll('.pic');*/
      const lastPic = pics.length - 1;
@@ -63,11 +62,10 @@ document.addEventListener('DOMContentLoaded', function() {
      setTimeout(() =>nextPic2.classList.add('active'), totalDelay);/*v2*/
      }
      setInterval(toggleClass, intervalDelay);
- });
-
+  }
 
  /*CLOTHING SLIDER*/
-
+{
      var pics = document.querySelectorAll('.clothpic');
 
      /*const pics = document.querySelectorAll('.pic');*/
@@ -98,6 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
      }
      setInterval(toggleClass, intervalDelay);
+
+}
  /*SHOW FAQ CLOSED TEXT*/
 
  function showCloseText(id,iconId){

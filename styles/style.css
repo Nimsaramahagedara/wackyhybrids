@@ -141,8 +141,8 @@ section {
 .join-discord .title{
     align-items: center;
     text-align: center;
-    line-height: 40px;
-    margin: 40px 0px;
+    line-height: 50px;
+    margin: 0;
     padding: 50px;
 }
 .join-discord .title h1,.join-discord-2 div h2{
@@ -202,8 +202,13 @@ section {
     width: 40%;
     height: 100%;
     display: grid;
+
+}
+#firstH2{
+    text-align: left;
 }
 .text h2, .content h2{
+    text-align: center;
     width: 100%;
     background-color: var(--primary);
     color: white;
@@ -457,6 +462,7 @@ p{
 .collection-3 .content .img-container{
     display: flex;
     width: 100%;
+    height: calc(100vw * 0.18);
 }
 .collection-3 .content .img-container img{
     width: 50%;
@@ -470,6 +476,10 @@ p{
 .collection-3 .content{
     width: 100%;
     
+}
+.collection-3 .content .img-container{
+    height: unset;
+
 }
 }
 

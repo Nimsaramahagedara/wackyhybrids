@@ -11,24 +11,24 @@
    <header class="header">
     <div class="box-container">
         <div class="header-box box1 menu">
-            <a href="" class="header-text">HOME</a>
-            <a href="" class="header-text">THE COLLECTION</a>
-            <a href="" class="header-text">REWARDS</a>
+            <a href="#home" class="header-text">HOME</a>
+            <a href="#collect" class="header-text">THE COLLECTION</a>
+            <a href="#reward" class="header-text">REWARDS</a>
         </div>
         <div class="header-box logo">
             <img src="images/amar-logo.png" alt="logo">
             <i class="fa-solid fa-bars" style="display: none ;" id="icon" onclick="menu()"></i>
         </div>
         <div class="header-box box2 menu">
-            <a href="" class="header-text">ROADMAP</a>
-            <a href="" class="header-text">SQUAD</a>
-            <a href="" class="header-text">FAQ</a>
+            <a href="#roadmap" class="header-text">ROADMAP</a>
+            <a href="#squad" class="header-text">SQUAD</a>
+            <a href="#faq" class="header-text">FAQ</a>
         </div>
     </div>
    </header>
    <main class="main">
-        <section class="landing-video">
-            <video controls muted>
+        <section class="landing-video" id="home">
+            <video controls>
                 <source src="videos/WH-Hype-Video_NO_F_BOMG_Socials.mp4" type="video/mp4">
              <!--   <source src="videos/original-baby-1.mp4" type="video/mp4" media="(max-width: 480px)">-->
             </video>
@@ -51,27 +51,27 @@
                 </div>
             </div>
         </section>
-        <section class="collection">
+        <section class="collection" id="collect">
             <div class="text">
-                <h2>THE</h2>
+                <h2 id="firstH2">THE</h2>
                 <h3>COLLECTION</h3>
                 <p>Unique pieces of artwork, wacky, hilarious and ridiculous in equal parts. Unlocking a bunch of rewards for holders, all of our collectibles are individually conceptualised and illustrated. An initial release of 100 will be made at auction - which will be valued as rare as they are the earliest editions. Additionally, the lucky first time buyers of these first 100 will have a lifetime of all rewards, which means even if they sell on the collectibles they will still benefit from the perks. Have a gander at the roadmap to check out the timeline for the future drops.</p>
                 <p>Our collection (10,000+) will expand to include story arcs as these hybrids are released into the world. You won't find any collectibles as unique and personality packed as ours. Start collecting your favourite characters, enjoy some WTF moments and join what is going to be the most fun community in the world of NFTs.</p>
             </div>
             <div class="image">
                
-                <img src="images/transition-images/11-1.jpg" alt="" class="pic" style="opacity: 1;">
+                <img src="images/transition-images/11-1.jpg" alt="" class="pic active">
                 <img src="images/transition-images/27.jpg" alt="" class="pic">
                 <img src="images/transition-images/28.jpg" alt="" class="pic">
-                <img src="images/transition-images/9-1.jpg" alt="" class="pic active">
+                <img src="images/transition-images/9-1.webp" alt="" class="pic">
                
             </div>
             <div class="image image-2">
                
-                <img src="images/transition-images/11-1.jpg" alt="" class="pic2" style="opacity: 1;">
-                <img src="images/transition-images/27.jpg" alt="" class="pic2 active">
+                <img src="images/transition-images/11-1.jpg" alt="" class="pic2 active">
+                <img src="images/transition-images/27.jpg" alt="" class="pic2">
                 <img src="images/transition-images/28.jpg" alt="" class="pic2">
-                <img src="images/transition-images/9-1.jpg" alt="" class="pic2">
+                <img src="images/9-1.jpg" alt="" class="pic2">
 
             </div>
         </section>
@@ -191,7 +191,7 @@
                 </div>
             </div>
         </section>
-        <div class="collection-3-heading">
+        <div class="collection-3-heading" id="reward">
             <h1>REWARDS</h1>
         </div>
 
@@ -266,7 +266,7 @@
             </div>
         </section>
 
-    <section class="timeline-section">
+    <section class="timeline-section" id="roadmap">
         <div class="collection-3-heading">
             <h1>ROADMAP<h1>
         </div>
@@ -345,7 +345,7 @@
             </ul>
         </div>
     </section>
-    <div class="collection-3-heading">
+    <div class="collection-3-heading" id="squad">
         <h1>SQUAD</h1>
     </div>
     <section class="squad">
@@ -382,7 +382,7 @@
             </div>
         </div>
     </section>
-    <div class="collection-3-heading">
+    <div class="collection-3-heading" id="faq">
         <h1>FAQ</h1>
         <h2>DO YOU HAVE OPEN QUESTIONS?</h2>
     </div>
@@ -474,8 +474,8 @@
     </footer>
    </main>
     
-   <script async src="https://kit.fontawesome.com/24b485c31a.js" crossorigin="anonymous"></script>
-   <script async src="js/script.js"></script>   
+   <script defer src="https://kit.fontawesome.com/24b485c31a.js" crossorigin="anonymous"></script>
+   <script defer src="js/script.js"></script>   
    
 </body>
 </html>
