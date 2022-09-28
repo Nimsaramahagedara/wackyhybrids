@@ -117,7 +117,7 @@ section {
 /*Landing Video*/
 
 .landing-video{
-    margin: 10px auto;
+    margin: 0px auto;
     width: 55%;
 }
 .landing-video video{
@@ -365,16 +365,21 @@ p{
     flex-wrap: wrap;
     padding: 10px;
 }
+.collection-3 .text p{
+    flex-grow: 4;
+}
 .collection-3 .text{
+    display: flex;
+    flex-direction: column;
     width: 33.33%;
     padding: 5px;
 }
 .collection-3 div video{
     width: 90%;
-    height: auto;
+    max-height: 252px;
     border: 5px solid var(--primary);
     border-radius: 5%;
-    margin-left: 5%;
+    align-self: center;
 }
 .collection-3 .text .clothings{
     display: grid;
@@ -414,6 +419,7 @@ p{
         height: auto;
         border-radius: 0;
         margin-left: unset;
+        max-height: unset;
     }
     .collection-3 .text .clothings{
         width: 90% !important;
@@ -426,7 +432,7 @@ p{
 /*GAMING SLIDER*/
 
 .gaming-slider{
-    width: calc(30vw * 11) !important;
+    width: calc(30vw * 10) !important;
     display: flex;
     animation: game-scroll 20s linear infinite;
 }
