@@ -605,6 +605,9 @@ p{
         width: 100%;
         
     }
+    #smiley-img{
+        height: unset;
+    }
     
 
 
