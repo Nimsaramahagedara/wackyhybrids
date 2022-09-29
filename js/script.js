@@ -38,7 +38,7 @@ function scrollFunction() {
      const lastPic2 = pics2.length - 1;/*v2*/
 
      const transitionDuration = 800; // matches CSS
-     const transitionDelay = 3000; // up to you
+     const transitionDelay = 7000; // up to you
      const totalDelay = transitionDuration + transitionDelay;
      const intervalDelay = (transitionDuration * 2) + transitionDelay; // time to fade out + time to fade in + time to stay active
 
@@ -55,11 +55,10 @@ function scrollFunction() {
      const nextPic = pics[nextIndex];
      const nextPic2 = pics2[nextIndex2];/*v2*/
      
-
-     setTimeout(() => activePic.classList.remove('active'), transitionDelay);
-     setTimeout(() => activePic2.classList.remove('active'), transitionDelay);/*v2*/
-     setTimeout(() =>nextPic.classList.add('active'), totalDelay);
-     setTimeout(() =>nextPic2.classList.add('active'), totalDelay);/*v2*/
+     setTimeout(() =>nextPic.classList.add('active'));
+     setTimeout(() => activePic.classList.remove('active'));
+     setTimeout(() =>nextPic2.classList.add('active'));/*v2*/
+     setTimeout(() => activePic2.classList.remove('active'));/*v2*/
      }
      setInterval(toggleClass, intervalDelay);
   }

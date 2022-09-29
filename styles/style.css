@@ -139,12 +139,12 @@ section {
     margin: 0px auto;
 }
 .join-discord .title{
-    transition: margin 1s;
+    transition: margin 500ms;
     align-items: center;
     text-align: center;
     line-height: 50px;
     margin: 0px auto 0px -180vw;
-    padding: 50px;
+    padding: 30px;
 }
 .join-discord .title h1,.join-discord-2 div h2{
     color: var(--primary);
@@ -187,6 +187,9 @@ section {
     .join-discord .title h1,.join-discord-2 div h2{
         color: var(--primary);
         font-size: 20px;
+    }
+    .join-discord .title{
+        padding: 10px;
     }
 }
 
@@ -288,7 +291,7 @@ p{
     animation: scroll 40s linear infinite;
 }
 .slide{
-    padding:10px ;
+    padding:5px ;
 }
 .slide img{
     width: 100%;
@@ -298,7 +301,7 @@ p{
 @media screen and (max-width: 645px) {
 
     .slide-track{
-        width: calc(50vw * 18);
+        width: calc(50vw * 19);
 
     }
 }
@@ -608,9 +611,6 @@ p{
     #smiley-img{
         height: unset;
     }
-    
-
-
 }
 
 .faq-container{
