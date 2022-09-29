@@ -72,7 +72,7 @@ function scrollFunction() {
      const lastPic = pics.length - 1;
 
 
-     const transitionDuration = 800; // matches CSS
+     const transitionDuration = 600; // matches CSS
      const transitionDelay = 3000; // up to you
      const totalDelay = transitionDuration + transitionDelay;
      const intervalDelay = (transitionDuration * 2) + transitionDelay; // time to fade out + time to fade in + time to stay active
@@ -113,6 +113,15 @@ function scrollFunction() {
           box.style.display = "none";
      }
 
+}
+
+/*Join Scord slide */
+
+var join = document.getElementsByClassName("title")[0];
+document.getElementsByTagName('body')[0].onscroll = function() {myFunction()};
+
+function myFunction() {
+  join.style.margin = "0px 0 0px 0";
 }
 
 
