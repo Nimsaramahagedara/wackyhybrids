@@ -85,6 +85,9 @@ a{
     .box1 a, .box2 a{
         display: block;
     }
+    .header{
+        height: 150px;
+    }
     .header-text:hover{
         color: white;
         background-color: var(--primary);
