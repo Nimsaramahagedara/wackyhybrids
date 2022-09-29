@@ -22,11 +22,11 @@ function scrollFunction() {
      const m = document.getElementsByClassName("box1")[0];
      const m2 = document.getElementsByClassName("box2")[0];
   if (icon.className == "fa-solid fa-x") {
-    m.style.top = "170px";
-    m2.style.top = "280px";
+    m.style.top = "150px";
+    m2.style.top = "260px";
   } else {
     /*m.style.top = "150px";*/
-    m2.style.top = "170px";
+    m2.style.top = "150px";
   }
 }
 
