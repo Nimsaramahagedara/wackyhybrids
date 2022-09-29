@@ -383,7 +383,7 @@ p{
 }
 .collection-3 .text .clothings{
     display: grid;
-    max-height: 450px;
+    max-height: 500px;
     overflow: hidden;
 }
 .collection-3 .text .clothings img{
@@ -564,6 +564,9 @@ p{
 .squad{
     width: 100%;
 }
+#squad-para{
+    text-align: center;
+}
 .squad .squad-container{
     width: 80%;
     display: flex;
@@ -578,6 +581,9 @@ p{
 .one-squad img{
     border-radius: 10px;
     width: 100%;
+}
+#smiley-img{
+    height: calc(15vw * 1.93);
 }
 .one-squad h3{
     color: white;
@@ -610,11 +616,15 @@ p{
     border-right: 3px solid var(--primary);
 }
 .faq-container div{
+    display: none; /*REMOVE THIS WHEN YOU HAVE FAQ AND UNCOMMENT THE FLEX*/
     padding: 0px 20px;
-    display: flex;
+   /* display: flex;*/
     align-items: baseline;
     border-top: 3px solid var(--primary);
     border-bottom: 3px solid var(--primary);
+}
+#first-text{
+    display: flex !important;
 }
 .faq-container div p{
     color: white;
@@ -660,6 +670,10 @@ p{
     width: 100%;
     background-color: var(--primary);
     text-align: center;
+    transition: 0.3s;
+}
+.footer .column .big-btn:hover{
+    background-color: white;
 }
 .footer .column .big-btn img{
     max-width: 45% ;
@@ -675,13 +689,16 @@ p{
 }
 .icon-with-text a{
     font-family: "Roboto", Sans-serif;
+    line-height: unset !important;
 }
 .icon-with-text p{
     padding: unset;
     line-height: unset;
     margin: unset;
 }
-.column h3{
+.column a{
+    display: block;
+    text-decoration: none;
     font-weight: 400;
     line-height: 40px;
     font-family: "Roboto", Sans-serif;
@@ -689,7 +706,7 @@ p{
     color: var(--paracolor);
     transition: 0.5s;
 }
-.column h3:hover{
+.column a:hover{
     color: white;
 }
 .column .social{
