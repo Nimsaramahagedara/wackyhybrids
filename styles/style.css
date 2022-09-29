@@ -76,7 +76,7 @@ a{
     .box1,.box2{
         display: block;
         position: absolute;
-        top:170px;
+        top:150px;
         width: 100%;
         background-color: black;
         transition: 0.3s;
@@ -142,7 +142,7 @@ section {
     margin: 0px auto;
 }
 .join-discord .title{
-    transition: margin 500ms;
+    transition: margin 150ms;
     align-items: center;
     text-align: center;
     line-height: 50px;
@@ -419,7 +419,6 @@ p{
     }
     .collection-3 .text{
         width: 100%;
-        text-align: justify;
     }
     .collection-3 div video{
         width: 100%;
