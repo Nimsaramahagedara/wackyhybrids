@@ -602,6 +602,7 @@ p{
 @media screen and (max-width: 760px) {
 
     .squad .squad-container{
+        width: 70%;
         display: block;
         justify-content: unset;
     }
