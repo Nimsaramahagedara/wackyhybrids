@@ -671,6 +671,7 @@ p{
     width: 33.33%;
 }
 .footer .column .big-btn{
+    padding: 10% ;
     border-radius: 95px;
     overflow: hidden;
     display: block;
@@ -679,11 +680,15 @@ p{
     text-align: center;
     transition: 0.3s;
 }
+.big-btn img{
+    width: 100%;
+    transform: translateY(20%);
+}
 .footer .column .big-btn:hover{
     background-color: white;
 }
 .footer .column .big-btn img{
-    max-width: 45% ;
+    max-width: 60% ;
 }
 .column h1{
     color: white;
