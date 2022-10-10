@@ -350,6 +350,7 @@ p{
     width: 100%;
     padding: 10px;
     padding: 15px;
+    text-align: center;
 }
 .collection-3-heading h1{
     color: white;
@@ -597,6 +598,21 @@ p{
 }
 .one-squad h3:hover{
     color: var(--primary);
+}
+.collection-3-heading .squad-illustration{
+    height: 70vh;
+    width: auto;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 870px) {
+
+    .collection-3-heading .squad-illustration{
+        height: unset;
+        max-height: 70vh;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 760px) {
